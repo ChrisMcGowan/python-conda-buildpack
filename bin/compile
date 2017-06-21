@@ -86,6 +86,6 @@ grep -rlI $BUILD_DIR $BUILD_DIR | xargs sed -i.bak "s|$BUILD_DIR|/home/vcap/app|
 mkdir -p $(dirname $PROFILE_PATH)
 echo "export PATH=$HOME/app/.conda/bin:\$PATH" >> $PROFILE_PATH
 
-echo "Let's hang awhile:
+echo "Let's hang awhile"
 sleep 100000
 echo "-----> Finished compile step"
